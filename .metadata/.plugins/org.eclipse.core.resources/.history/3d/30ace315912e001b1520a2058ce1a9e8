@@ -1,0 +1,12 @@
+package br.com.batistacorp.agendamento.model;
+
+public class Usuario {
+
+    private int id;
+    private String nome;
+    private String email;
+    private String racf;
+    private String senha; 
+    private String linkfoto; 
+
+}

@@ -1,0 +1,17 @@
+package br.com.batistacorp.agendamento.model;
+
+import javax.persistence.Entity;
+import javax.persistence.Table;
+
+@Entity //Esta anotação diz que é uma classe armazenavel em banco
+@Table(name="tbl_usuario") //indica qual tabela que existe no banco
+public class Usuario {
+
+    private int id;
+    private String nome;
+    private String email;
+    private String racf;
+    private String senha; 
+    private String linkfoto;
+    
+}
