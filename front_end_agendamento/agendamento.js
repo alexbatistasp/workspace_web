@@ -52,3 +52,46 @@ function gerahorafinal(){
     }
     document.getElementById("txtHoraFim").value = hI+":"+mI;
 }
+
+
+function cadastrar(){
+    var txtNomeCli  = document.getElementById("txtNome").value;
+    var txtEmailCli = document.getElementById("txtEmail").value;
+    var txtCelCli   = document.getElementById("txtTelefone").value;
+    var txtDataCli  = document.getElementById("txtData").value;
+    var txtAgencia  = document.getElementById("txtAgencia").value;
+    var txtHoraIni  = document.getElementById("txtHoraInicio").value;
+    var txtObs      = document.getElementById("txtObservacao").value;
+
+    var msgBody = {
+        nomeCliente : txtNomeCli,
+        emailCliente : txtEmailCli,
+        celularCliente : txtCelCli,
+        dataAgendamento : txtDataCli,
+        horaAgendamento : txtHoraIni,
+        observacao : txtObs,
+        agencia : {
+            id : parseInt(txtAgencia)
+        }
+    };
+
+    var cabecalho = {
+        method : "POST",
+        body : JSON.stringify(msgBody),
+        headers : {
+            "content-type" : "application/json"
+        }
+    };
+
+    fetch("http://localhost:8080/novoagendamento",cabecalho)
+        .then(res => trataResultado(res));
+}
+
+function trataResultado(res){
+    if (res.status == 201){
+        alert("Solicitacao de agendamento Efetivada!")
+    }
+    else{
+        alert("ERRO ao atender solicitacao");
+    }
+}
