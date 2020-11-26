@@ -1,0 +1,10 @@
+package br.com.batistacorp.agendamento.controller;
+
+import org.springframework.web.bind.annotation.GetMapping;
+
+@RestController
+public class UsuarioController {
+
+	@GetMapping("/login")
+	
+}

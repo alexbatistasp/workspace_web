@@ -8,4 +8,6 @@
 <item elementID="=agendamento/src\/test\/java=/optional=/true=/=/maven.pomderived=/true=/=/test=/true=/" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
 </workingSet>
 <workingSet aggregate="true" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1606245176710_2" label="Window Working Set" name="Aggregate for window 1606245176710"/>
+<workingSet aggregate="true" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1606307203093_3" label="Window Working Set" name="Aggregate for window 1606307203093"/>
+<workingSet aggregate="true" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1606394920138_4" label="Window Working Set" name="Aggregate for window 1606394920138"/>
 </workingSetManager>

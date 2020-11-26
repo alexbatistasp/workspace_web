@@ -1,0 +1,8 @@
+package br.com.batistacorp.agendamento.dao;
+
+
+public interface UsuarioDAO extends CrudRepository<Usuario, Integer>{
+	
+	public Usuario findByEmailAndSenha(String email, String senha);
+
+}

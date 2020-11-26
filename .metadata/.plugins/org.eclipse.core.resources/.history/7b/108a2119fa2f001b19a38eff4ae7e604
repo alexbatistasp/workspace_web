@@ -1,0 +1,7 @@
+package br.com.batistacorp.agendamento.dao;
+
+import org.springframework.data.repository.CrudRepository;
+
+public interface AgendamentoDAO extends CrudRepository<Agendamento, Integer> {
+
+}

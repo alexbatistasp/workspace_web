@@ -1,0 +1,18 @@
+package br.com.batistacorp.agendamento.controller;
+
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
+public class UsuarioController {
+
+	/*  O método logarUsuario vai receber um JSON correspondente ao objeto Usuario
+	 *  vindo no corpo da requisicao através do método POST
+	 *  Este método POST é o que permite ao FRONT END enviar dados para o BACK END
+	 */
+	@PostMapping("/login")
+	public void logarUsuario(@RequestBody Usuario userLogin) {
+		System.out.println("DEBUG  - Dados recebidos ");
+		System.out.println("         Email: "+userLogin.getEmail());
+		System.out.println("         Senha: "+userLogin.getSenha());
+	}
+}

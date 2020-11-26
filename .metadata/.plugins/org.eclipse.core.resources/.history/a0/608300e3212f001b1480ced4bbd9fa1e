@@ -1,0 +1,20 @@
+package br.com.batistacorp.agendamento.controller;
+
+import java.util.ArrayList;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.RestController;
+
+import br.com.batistacorp.agendamento.dao.AgenciaDAO;
+import br.com.batistacorp.agendamento.model.Agencia;
+
+@RestController
+public class AgenciaController {
+	
+	@Autowired
+	private AgenciaDAO dao;
+	public ArrayList<Agencia> reperarTodas(){
+		
+	}
+
+}
